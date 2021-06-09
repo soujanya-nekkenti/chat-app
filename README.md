@@ -3,6 +3,11 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 Styled components are used for styling.
 
+# Live Site:
+
+Screenshot 2021-06-09 at 07.59.56<img width="1562" alt="Screenshot 2021-06-09 at 07 59 56" src="https://user-images.githubusercontent.com/8241484/121301680-d7a08d00-c8f8-11eb-96b2-869f2c8ad1bc.png">
+
+
 The app is built to send and receive messages using web sockets and Socket.io in real time.
 
 ## Tech Stack
