@@ -15,7 +15,7 @@ const server = http.createServer(app);
 const io = socketio(server, 
   {
     cors:{
-    origin: 'http://localhost:3000',
+    origin: 'https://fervent-poincare-521961.netlify.app',
     methods:['GET','POST'],
     credentials:true
   }
