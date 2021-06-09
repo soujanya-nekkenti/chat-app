@@ -5,7 +5,7 @@ Styled components are used for styling.
 
 ## Live Site:
 
-Screenshot 2021-06-09 at 07.59.56<img width="1562" alt="Site screenshot" src="https://user-images.githubusercontent.com/8241484/121301680-d7a08d00-c8f8-11eb-96b2-869f2c8ad1bc.png">
+Site Screenshot<img width="1562" alt="Site screenshot" src="https://user-images.githubusercontent.com/8241484/121301680-d7a08d00-c8f8-11eb-96b2-869f2c8ad1bc.png">
 
 
 The app is built to send and receive messages using web sockets and Socket.io in real time.
