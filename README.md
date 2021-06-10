@@ -1,7 +1,7 @@
 # Real Time Chat App in React
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-Styled components are used for styling.
+The frontend is designed with [Styled components](https://github.com/styled-components/styled-components).
 
 ## Live Site:
 
