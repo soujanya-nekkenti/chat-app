@@ -17,7 +17,7 @@ const Chat = ({ location }) => {
   const [messages, setMessages] = useState([]);
 
  const ENDPOINT = "https://personal-chat-bot.herokuapp.com/";
-// const ENDPOINT = "localhost:8000"; // for local development
+ // const ENDPOINT = "http://localhost:8000"; // for local development
 
   useEffect(() => {
     const { name, room } = queryString.parse(location.search);
@@ -53,6 +53,13 @@ const Chat = ({ location }) => {
   };
 
   return (
+    <Wrapper>
+    <Header>
+      Realtime Chat Application{" "}
+      <span role="img" aria-label="emoji">
+        💬
+      </span>
+    </Header>
     <OuterContainer>
       <Container>
         <InfoBar room={room} />
@@ -65,6 +72,7 @@ const Chat = ({ location }) => {
       </Container>
       <TextContainer users={users} />
     </OuterContainer>
+    </Wrapper>
   );
 };
 
@@ -78,7 +86,25 @@ export const OuterContainer = styled.div`
   background-color: #1a1a1d;
   @media (min-width: 320px) and (max-width: 480px) {
     height: 100%;
+    flex-direction: column-reverse;
   }
+`;
+
+export const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+export const Header = styled.h1`
+  display: flex;
+  justify-content: center;
+  span{
+    margin-left: 20px;
+  }
+
+  @media (min-width: 320px) and (max-width: 480px) {
+     display: none;
+    }
 `;
 
 export const Container = styled.div`

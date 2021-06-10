@@ -5,35 +5,15 @@ import onlineIcon from "../icons/onlineIcon.png";
 
 const TextContainer = ({ users }) => (
   <TextWrapper>
-    <div>
-      <h1>
-        Realtime Chat Application{" "}
-        <span role="img" aria-label="emoji">
-          💬
-        </span>
-      </h1>
-      <h2>
-        Created with React, Express, Node and Socket.IO{" "}
-        <span role="img" aria-label="emoji">
-          ❤️
-        </span>
-      </h2>
-      <h2>
-        Try it out right now!{" "}
-        <span role="img" aria-label="emoji">
-          ⬅️
-        </span>
-      </h2>
-    </div>
     {users ? (
       <div>
-        <h1>People currently chatting:</h1>
+        <h1>Online Users:</h1>
         <ActiveContainer>
           <h2>
             {users.map(({ name }) => (
-              <ActiveItem key={name}>
-                {name}
+              <ActiveItem key={name}>   
                 <img alt="Online Icon" src={onlineIcon} />
+                {name}
               </ActiveItem>
             ))}
           </h2>
@@ -55,6 +35,12 @@ export const TextWrapper = styled.div`
 
   h1 {
     margin-bottom: 0px;
+    @media (min-width: 320px) and (max-width: 480px) {
+    font-size:24px;
+    }
+  }
+  @media (min-width: 320px) and (max-width: 480px) {
+    margin-left: 2px;
   }
 `;
 
@@ -62,6 +48,10 @@ export const ActiveContainer = styled.div`
   display: flex;
   align-items: center;
   margin-bottom: 50%;
+  text-transform: capitalize;
+  @media (min-width: 320px) and (max-width: 480px) {
+    margin-bottom: 2%;
+  }
 `;
 
 export const ActiveItem = styled.div`
@@ -70,6 +60,10 @@ export const ActiveItem = styled.div`
   margin-bottom: 50%;
 
   img {
-    padding-left: 10px;
+    padding-right: 10px;
   }
+
+  @media (min-width: 320px) and (max-width: 480px) {
+    font-size:14px;
+    }
 `;

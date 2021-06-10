@@ -40,6 +40,7 @@ export const InputBox = styled.input`
 export const Button = styled.button`
   color: #fff !important;
   text-transform: uppercase;
+  cursor: pointer;
   text-decoration: none;
   background: #2979ff;
   padding: 20px;
